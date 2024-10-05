@@ -1,0 +1,37 @@
+# fetch all tasks
+GET http://localhost:3000/ntdl/tasks
+
+###
+GET http://localhost:3000/ntdl/tasks/1 
+
+###
+
+POST http://localhost:3000/ntdl/tasks
+content-type: application/json
+
+{
+    "task": "NEW TASK",
+    "hour":2000,
+    "type": "good"
+}
+
+###
+PUT http://localhost:3000/ntdl/tasks/p4ii7d
+content-type: application/json
+
+{
+    "task": "NEW UPDATES FROM DENTED",
+    "hour": 30,
+    "type": "good"
+}
+
+###
+PATCH http://localhost:3000/ntdl/tasks/p4ii7d
+content-type: application/json
+
+{
+    "task": "I AM JUST UPDATING TASK"
+}
+
+###
+DELETE http://localhost:3000/ntdl/tasks/randomGen
